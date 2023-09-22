@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+
+        @media screen and (max-width:480px) {
+            body {
+                background-color: greenyellow;
+            }            
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: blue;
+            color: white;
+            flex-direction: column;
+            text-align: center;
+            flex-wrap: wrap;
+            width: 50%;
+        }
+
+        .flex-container>div {
+            background-color: brown;
+            width: 20px;
+            margin: 5px;
+            padding: 20px;
+            border: 1px solid;
+
+        }
+        @media screen and (max-width:480px) {
+            .flex-container>div{
+                background-color: rgb(220, 156, 18);
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nobis eligendi, repudiandae corporis possimus
+        magnam aut deleniti voluptas, beatae at perferendis vitae provident iusto officiis dolores sapiente autem esse
+        quis?</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+
+</html>
